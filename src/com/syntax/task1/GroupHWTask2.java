@@ -1,10 +1,5 @@
 package com.syntax.task1;
 
-
-import java.util.Scanner;
-
-import javax.annotation.processing.SupportedSourceVersion;
-
 public class GroupHWTask2 {
 
 	public static void main(String[] args) {
@@ -12,10 +7,11 @@ public class GroupHWTask2 {
 		 * Write a java program to check whether a given number is prime or not?
 		 */
 
-		int num = 121;
+		int num = -11;
 	    int result; 
 	    boolean isPrime = true;
 	    
+	    if (num > 1) {
 		for (int i = 2; i < num; i++) {
 			result = num % i; 
 			if (result == 0) {
@@ -23,6 +19,9 @@ public class GroupHWTask2 {
 				break;
 			}
 		}
+	    } else {
+	    	isPrime = false;
+	    }
 		if (isPrime) {
 		 System.out.println(num + " is prime number");
 		} else {

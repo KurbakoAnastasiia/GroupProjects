@@ -1,5 +1,6 @@
 package com.syntax.task1;
 
+import java.util.Arrays;
 
 public class GroupHWTask4 {
 
@@ -22,7 +23,11 @@ public class GroupHWTask4 {
 			}
 		}
 		System.out.println("The maximum number is " + max);
-		System.out.println("The minimum number is " + max);
+		System.out.println("The minimum number is " + min);
+		
+		Arrays.sort(array);
+		System.out.println("The maximum number is " + array[array.length - 1]);
+		System.out.println("The minimum number is " + array[0]);
 	}
 
 }
