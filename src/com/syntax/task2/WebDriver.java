@@ -1,0 +1,7 @@
+package com.syntax.task2;
+
+public interface WebDriver {
+    void open();
+    void close();
+    String getTitle();
+}
